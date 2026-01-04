@@ -49,6 +49,7 @@ A lightweight, secure web-based Inventory Management System with barcode/RFID sc
 
 ## Documentation
 
+- **[DOCKER.md](DOCKER.md)** - Docker deployment guide (recommended)
 - **[QUICKSTART.md](QUICKSTART.md)** - Quick start guide for getting up and running
 - **[DEPLOYMENT.md](DEPLOYMENT.md)** - Comprehensive deployment guide for AWS Lightsail
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Common issues and solutions
@@ -64,13 +65,38 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Installation
 
-### Prerequisites
+### Option 1: Docker (Recommended)
 
+The fastest way to get started:
+
+```bash
+# Clone the repository
+git clone https://github.com/georgi-i/light-stock.git
+cd light-stock
+
+# Copy environment file and configure
+cp .env.docker .env
+nano .env  # Update SECRET_KEY and other settings
+
+# Start with Docker Compose
+docker-compose up -d
+
+# Initialize database
+docker-compose exec lightstock python init_db.py
+```
+
+Access at **http://localhost:8000**
+
+📖 **[Full Docker Guide](DOCKER.md)**
+
+### Option 2: Manual Installation
+
+**Prerequisites:**
 - Python 3.11 or higher
 - pip (Python package manager)
 - Virtual environment (recommended)
 
-### Setup Steps
+**Setup Steps:**
 
 1. **Clone the repository**
    ```bash
