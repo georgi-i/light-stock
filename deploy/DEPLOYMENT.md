@@ -33,7 +33,7 @@ Complete guide for deploying the Inventory Management System to AWS Lightsail.
 3. **Deploy the application**:
    ```bash
    # From your local machine
-   cd /Users/gi/AWS_lightsail_IMS
+   cd /path/to/light-stock
    ./deploy/deploy.sh your-server-ip
    # or
    ./deploy/deploy.sh ims@your-server-ip

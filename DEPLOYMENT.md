@@ -278,7 +278,7 @@ git clone https://github.com/yourusername/ims.git .
 
 # Option 2: Upload via SCP from your local machine
 # (From your local machine):
-# scp -i LightsailDefaultKey.pem -r AWS_lightsail_IMS/* ubuntu@54.123.45.67:/tmp/ims/
+# scp -i LightsailDefaultKey.pem -r light-stock/* ubuntu@54.123.45.67:/tmp/ims/
 # Then on server:
 # sudo mv /tmp/ims/* /home/ims/app/
 # sudo chown -R ims:ims /home/ims/app/

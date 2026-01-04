@@ -73,7 +73,7 @@ flask run
 ## Project Structure
 
 ```
-AWS_lightsail_IMS/
+light-stock/
 ├── app/                    # Main application package
 │   ├── __init__.py        # Flask app factory
 │   ├── models.py          # Database models

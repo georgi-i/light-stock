@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# AWS Lightsail IMS - Initial Server Setup Script
+# LightStock - Initial Server Setup Script
 # Run this script as root/sudo on a fresh Ubuntu 22.04 Lightsail instance
 #
 # Usage: sudo bash setup.sh

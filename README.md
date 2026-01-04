@@ -1,4 +1,4 @@
-# IMS - Inventory Management System
+# LightStock - Inventory Management System
 
 A lightweight, secure web-based Inventory Management System with barcode/RFID scanning capabilities, featuring a minimalistic Apple-inspired interface.
 
@@ -66,7 +66,8 @@ A lightweight, secure web-based Inventory Management System with barcode/RFID sc
 
 1. **Clone the repository**
    ```bash
-   cd AWS_lightsail_IMS
+   git clone https://github.com/georgi-i/light-stock.git
+   cd light-stock
    ```
 
 2. **Create and activate virtual environment**
@@ -160,7 +161,7 @@ After initialization, log in with the admin credentials you created during the `
 ## Project Structure
 
 ```
-AWS_lightsail_IMS/
+light-stock/
 ├── app/
 │   ├── __init__.py          # Flask app factory
 │   ├── models.py            # Database models
