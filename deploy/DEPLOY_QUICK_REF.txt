@@ -1,0 +1,104 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    IMS DEPLOYMENT QUICK REFERENCE                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ FIRST-TIME SETUP (Run once)                                                  │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+1. Make scripts executable:
+   chmod +x deploy/deploy.sh deploy/post-deploy.sh
+
+2. Run server setup (on Lightsail instance):
+   sudo bash setup.sh
+
+3. Configure .env on server:
+   ssh ims@your-ip
+   nano /home/ims/app/.env
+
+4. Set up Nginx & SSL (on server):
+   sudo cp /home/ims/app/deploy/nginx.conf /etc/nginx/sites-available/ims
+   sudo ln -s /etc/nginx/sites-available/ims /etc/nginx/sites-enabled/
+   sudo nginx -t && sudo systemctl restart nginx
+   sudo certbot --nginx -d your-domain.com
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ DEPLOY APPLICATION                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+   ./deploy/deploy.sh your-server-ip
+
+   That's it! Everything else is automatic.
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ FILES INCLUDED IN DEPLOYMENT                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+   ✅ app/              ❌ venv/
+   ✅ config.py         ❌ __pycache__/
+   ✅ run.py            ❌ *.pyc
+   ✅ requirements.txt  ❌ .env
+   ✅ migrations/       ❌ *.db, *.sqlite
+   ✅ translations/     ❌ .DS_Store
+   ✅ deploy/           ❌ .git/
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ USEFUL COMMANDS                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+Check status:
+   ssh ims@your-ip 'sudo systemctl status ims'
+
+View logs:
+   ssh ims@your-ip 'tail -f /home/ims/logs/ims.log'
+
+Restart app:
+   ssh ims@your-ip 'sudo systemctl restart ims'
+
+Backup database:
+   ssh ims@your-ip '/home/ims/app/deploy/backup-database.sh'
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SERVER DIRECTORIES                                                           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+   /home/ims/app/          - Application code
+   /home/ims/logs/         - Application logs
+   /home/ims/backups/      - Database backups
+   /home/ims/app/instance/ - SQLite database
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ TROUBLESHOOTING                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+502 Bad Gateway:
+   - Check: sudo systemctl status ims
+   - Logs: tail -f /home/ims/logs/error.log
+
+Can't connect:
+   - Verify IP address
+   - Check SSH key: ssh-add -l
+
+App not starting:
+   - View logs: sudo journalctl -u ims -n 50
+   - Check .env file exists
+   - Restart: sudo systemctl restart ims
+
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ ROLLBACK                                                                     │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+   ssh ims@your-ip
+   cd /home/ims/app
+   tar -xzf /tmp/ims-deploy-YYYYMMDD-HHMMSS.tar.gz
+   sudo systemctl restart ims
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  For detailed documentation, see: deploy/DEPLOYMENT.md                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝

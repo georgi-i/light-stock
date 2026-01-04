@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}Register - IMS{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8">
+        <div>
+            <h2 class="text-center text-3xl font-bold text-gray-900">
+                Create Account
+            </h2>
+        </div>
+
+        <div class="apple-card p-8">
+            <form method="POST" action="{{ url_for('auth.register') }}" class="space-y-6">
+                <div>
+                    <label for="username" class="block text-sm font-medium text-gray-700">
+                        Username
+                    </label>
+                    <input type="text"
+                           name="username"
+                           id="username"
+                           required
+                           autofocus
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">
+                        Email
+                    </label>
+                    <input type="email"
+                           name="email"
+                           id="email"
+                           required
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">
+                        Password (min 12 characters)
+                    </label>
+                    <input type="password"
+                           name="password"
+                           id="password"
+                           required
+                           minlength="12"
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <div>
+                    <label for="password_confirm" class="block text-sm font-medium text-gray-700">
+                        Confirm Password
+                    </label>
+                    <input type="password"
+                           name="password_confirm"
+                           id="password_confirm"
+                           required
+                           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <button type="submit"
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 apple-btn">
+                    Create Account
+                </button>
+            </form>
+
+            <div class="mt-6 text-center">
+                <a href="{{ url_for('auth.login') }}" class="text-sm text-blue-600 hover:text-blue-700">
+                    Already have an account? Sign in
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

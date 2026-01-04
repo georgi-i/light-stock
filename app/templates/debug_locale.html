@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Translation Debug</title>
+</head>
+<body>
+    <h1>Translation Debug</h1>
+    <p><strong>Dashboard translation:</strong> {{ _('Dashboard') }}</p>
+    <p><strong>Products translation:</strong> {{ _('Products') }}</p>
+    <p><strong>Expected (BG):</strong> Табло, Продукти</p>
+    <hr>
+    <p><strong>Current locale:</strong> {{ g.get('babel_locale', 'not set') }}</p>
+    <p><strong>Session language:</strong> {{ session.get('language', 'not set') }}</p>
+</body>
+</html>

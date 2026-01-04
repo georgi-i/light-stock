@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _('Quick Lookup') }} - IMS{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <div class="mb-8">
+        <a href="{{ url_for('scanner.index') }}" class="text-blue-600 hover:text-blue-700 inline-flex items-center mb-4">
+            <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            {{ _('Back to Scanner') }}
+        </a>
+        <h1 class="text-3xl font-bold text-gray-900">{{ _('Quick Lookup') }}</h1>
+        <p class="mt-2 text-gray-600">{{ _('Scan barcode or enter product code') }}</p>
+    </div>
+
+    <div class="apple-card p-8">
+        <form method="POST" action="{{ url_for('scanner.lookup') }}">
+            <div class="mb-6">
+                <label for="code" class="block text-sm font-medium text-gray-700 mb-2">
+                    {{ _('Barcode / RFID / SKU') }}
+                </label>
+                <input type="text"
+                       name="code"
+                       id="code"
+                       required
+                       autofocus
+                       class="scanner-input w-full"
+                       placeholder="{{ _('Scan or enter code...') }}">
+                <p class="mt-2 text-sm text-gray-500">
+                    {{ _('Focus this field and use your barcode scanner, or type manually') }}
+                </p>
+            </div>
+
+            <button type="submit"
+                    class="w-full py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 apple-btn">
+                {{ _('Lookup Product') }}
+            </button>
+        </form>
+    </div>
+
+    <div class="mt-6 apple-card p-6">
+        <h3 class="font-semibold text-gray-900 mb-2">{{ _('Tips:') }}</h3>
+        <ul class="space-y-1 text-sm text-gray-600">
+            <li>• {{ _('Most USB barcode scanners work automatically') }}</li>
+            <li>• {{ _('The scanner will input the code and submit the form') }}</li>
+            <li>• {{ _('You can also type the code manually') }}</li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    // Auto-submit on barcode scan (most scanners add Enter at the end)
+    document.getElementById('code').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            this.form.submit();
+        }
+    });
+</script>
+{% endblock %}

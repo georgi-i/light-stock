@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}{{ _('Scanner') }} - IMS{% endblock %}
+
+{% block content %}
+<div>
+    <div class="mb-8">
+        <h1 class="text-3xl font-bold text-gray-900">{{ _('Barcode Scanner') }}</h1>
+        <p class="mt-2 text-gray-600">{{ _('Quick scanning operations for inventory management') }}</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Quick Lookup -->
+        <a href="{{ url_for('scanner.lookup') }}" class="apple-card p-8 hover:shadow-xl transition-shadow">
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-blue-100 rounded-full p-6 mb-4">
+                    <svg class="h-12 w-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">{{ _('Lookup Product') }}</h2>
+                <p class="text-gray-600">{{ _('Scan to view product details') }}</p>
+            </div>
+        </a>
+
+        <!-- Stock In -->
+        <a href="{{ url_for('scanner.stock_in') }}" class="apple-card p-8 hover:shadow-xl transition-shadow">
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-green-100 rounded-full p-6 mb-4">
+                    <svg class="h-12 w-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">{{ _('Stock In') }}</h2>
+                <p class="text-gray-600">{{ _('Add items to inventory') }}</p>
+            </div>
+        </a>
+
+        <!-- Stock Out -->
+        <a href="{{ url_for('scanner.stock_out') }}" class="apple-card p-8 hover:shadow-xl transition-shadow">
+            <div class="flex flex-col items-center text-center">
+                <div class="bg-red-100 rounded-full p-6 mb-4">
+                    <svg class="h-12 w-12 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                    </svg>
+                </div>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">{{ _('Stock Out') }}</h2>
+                <p class="text-gray-600">{{ _('Remove items from inventory') }}</p>
+            </div>
+        </a>
+    </div>
+
+    <!-- Instructions -->
+    <div class="mt-8 apple-card p-6">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ _('Scanner Instructions') }}</h3>
+        <div class="space-y-3 text-gray-600">
+            <p><strong>{{ _('USB Barcode Scanner:') }}</strong> {{ _('Simply scan the barcode when the input field is focused. The scanner acts as a keyboard and will automatically input the code.') }}</p>
+            <p><strong>{{ _('Manual Entry:') }}</strong> {{ _('You can also manually type the SKU, barcode, or RFID tag number.') }}</p>
+            <p><strong>{{ _('Keyboard Shortcuts:') }}</strong> {{ _('Press Tab to quickly move between fields for faster data entry.') }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,472 @@
+# Translations template for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-01-04 00:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app/templates/base.html:78 app/templates/base.html:148
+#: app/templates/dashboard.html:8 app/templates/debug_locale.html:9
+msgid "Dashboard"
+msgstr ""
+
+#: app/templates/base.html:82 app/templates/base.html:152
+#: app/templates/debug_locale.html:10 app/templates/inventory/products.html:8
+msgid "Products"
+msgstr ""
+
+#: app/templates/base.html:86 app/templates/base.html:156
+#: app/templates/scanner/index.html:3
+msgid "Scanner"
+msgstr ""
+
+#: app/templates/base.html:90 app/templates/base.html:160
+#: app/templates/inventory/categories.html:8
+msgid "Categories"
+msgstr ""
+
+#: app/templates/auth/profile.html:8 app/templates/base.html:120
+msgid "Profile"
+msgstr ""
+
+#: app/templates/base.html:123
+msgid "Users"
+msgstr ""
+
+#: app/templates/base.html:126
+msgid "Logout"
+msgstr ""
+
+#: app/templates/dashboard.html:9
+msgid "Welcome back"
+msgstr ""
+
+#: app/templates/dashboard.html:18
+msgid "Total Products"
+msgstr ""
+
+#: app/templates/dashboard.html:28
+msgid "View all products"
+msgstr ""
+
+#: app/templates/dashboard.html:39
+msgid "Low Stock Items"
+msgstr ""
+
+#: app/templates/dashboard.html:51
+msgid "View low stock"
+msgstr ""
+
+#: app/templates/dashboard.html:62
+msgid "Inventory Value"
+msgstr ""
+
+#: app/templates/dashboard.html:78
+msgid "Quick Actions"
+msgstr ""
+
+#: app/templates/dashboard.html:82 app/templates/inventory/product_form.html:15
+msgid "Add New Product"
+msgstr ""
+
+#: app/templates/dashboard.html:86
+msgid "Scan Barcode"
+msgstr ""
+
+#: app/templates/dashboard.html:90 app/templates/scanner/index.html:34
+#: app/templates/scanner/stock_in.html:14
+msgid "Stock In"
+msgstr ""
+
+#: app/templates/dashboard.html:94 app/templates/scanner/index.html:47
+#: app/templates/scanner/stock_out.html:14
+msgid "Stock Out"
+msgstr ""
+
+#: app/templates/dashboard.html:101
+msgid "Low Stock Alerts"
+msgstr ""
+
+#: app/templates/dashboard.html:120
+msgid "View all"
+msgstr ""
+
+#: app/templates/dashboard.html:124
+msgid "No low stock items"
+msgstr ""
+
+#: app/templates/dashboard.html:131
+msgid "Recent Stock Movements"
+msgstr ""
+
+#: app/templates/dashboard.html:172
+msgid "No recent movements"
+msgstr ""
+
+#: app/templates/auth/login.html:13
+msgid "Inventory Management System"
+msgstr ""
+
+#: app/templates/auth/login.html:21
+msgid "Username or Email"
+msgstr ""
+
+#: app/templates/auth/login.html:33
+msgid "Password"
+msgstr ""
+
+#: app/templates/auth/login.html:49
+msgid "Remember me"
+msgstr ""
+
+#: app/templates/auth/login.html:56
+msgid "Sign in"
+msgstr ""
+
+#: app/templates/auth/profile.html:14
+msgid "User Information"
+msgstr ""
+
+#: app/templates/auth/profile.html:17
+msgid "Username"
+msgstr ""
+
+#: app/templates/auth/profile.html:21
+msgid "Email"
+msgstr ""
+
+#: app/templates/auth/profile.html:53
+msgid "Two-Factor Authentication"
+msgstr ""
+
+#: app/templates/auth/users.html:8
+msgid "User Management"
+msgstr ""
+
+#: app/templates/inventory/categories.html:11
+#: app/templates/inventory/category_form.html:56
+msgid "Add Category"
+msgstr ""
+
+#: app/templates/inventory/categories.html:25
+msgid "products"
+msgstr ""
+
+#: app/templates/inventory/categories.html:28
+msgid "View Products"
+msgstr ""
+
+#: app/templates/inventory/categories.html:37
+msgid "No categories yet"
+msgstr ""
+
+#: app/templates/inventory/categories.html:40
+msgid "Add Your First Category"
+msgstr ""
+
+#: app/templates/inventory/category_form.html:13
+msgid "Back to Categories"
+msgstr ""
+
+#: app/templates/inventory/category_form.html:15
+msgid "Add New Category"
+msgstr ""
+
+#: app/templates/inventory/category_form.html:22
+msgid "Category Name (English)"
+msgstr ""
+
+#: app/templates/inventory/category_form.html:34
+msgid "Category Name (Bulgarian)"
+msgstr ""
+
+#: app/templates/inventory/category_form.html:45
+msgid "Description (Optional)"
+msgstr ""
+
+#: app/templates/inventory/category_form.html:60
+#: app/templates/inventory/product_form.html:151
+msgid "Cancel"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:13
+msgid "Back"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:15
+msgid "Edit Product"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:23
+msgid "Product Name"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:49
+msgid "Barcode"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:62
+msgid "Description"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:75
+msgid "Initial Quantity"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:88
+msgid "Minimum Stock Level"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:100
+msgid "Unit Price (EUR)"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:116
+#: app/templates/inventory/products.html:68
+msgid "Category"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:121
+msgid "No Category"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:132
+#: app/templates/inventory/products.html:71
+msgid "Location"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:138
+msgid "e.g., Warehouse A, Shelf 3"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:147
+msgid "Update Product"
+msgstr ""
+
+#: app/templates/inventory/product_form.html:147
+#: app/templates/inventory/products.html:11
+msgid "Add Product"
+msgstr ""
+
+#: app/templates/inventory/products.html:22
+msgid "Search by name, SKU, or barcode..."
+msgstr ""
+
+#: app/templates/inventory/products.html:28
+msgid "All Categories"
+msgstr ""
+
+#: app/templates/inventory/products.html:39
+msgid "Search"
+msgstr ""
+
+#: app/templates/inventory/products.html:43
+msgid "Clear"
+msgstr ""
+
+#: app/templates/inventory/products.html:54
+msgid "Show only low stock items"
+msgstr ""
+
+#: app/templates/inventory/products.html:66
+msgid "Product"
+msgstr ""
+
+#: app/templates/inventory/products.html:67
+msgid "SKU"
+msgstr ""
+
+#: app/templates/inventory/products.html:69
+msgid "Stock"
+msgstr ""
+
+#: app/templates/inventory/products.html:70
+msgid "Price"
+msgstr ""
+
+#: app/templates/inventory/products.html:72
+msgid "Actions"
+msgstr ""
+
+#: app/templates/inventory/products.html:85
+msgid "Low Stock"
+msgstr ""
+
+#: app/templates/inventory/products.html:109
+msgid "View"
+msgstr ""
+
+#: app/templates/inventory/products.html:123
+msgid "Showing"
+msgstr ""
+
+#: app/templates/inventory/products.html:123
+msgid "to"
+msgstr ""
+
+#: app/templates/inventory/products.html:123
+msgid "of"
+msgstr ""
+
+#: app/templates/inventory/products.html:123
+msgid "results"
+msgstr ""
+
+#: app/templates/inventory/products.html:129
+msgid "Previous"
+msgstr ""
+
+#: app/templates/inventory/products.html:135
+msgid "Next"
+msgstr ""
+
+#: app/templates/inventory/products.html:144
+msgid "No products found"
+msgstr ""
+
+#: app/templates/inventory/products.html:147
+msgid "Add Your First Product"
+msgstr ""
+
+#: app/templates/scanner/index.html:8
+msgid "Barcode Scanner"
+msgstr ""
+
+#: app/templates/scanner/index.html:9
+msgid "Quick scanning operations for inventory management"
+msgstr ""
+
+#: app/templates/scanner/index.html:21 app/templates/scanner/lookup.html:38
+msgid "Lookup Product"
+msgstr ""
+
+#: app/templates/scanner/index.html:22
+msgid "Scan to view product details"
+msgstr ""
+
+#: app/templates/scanner/index.html:35 app/templates/scanner/stock_in.html:15
+msgid "Add items to inventory"
+msgstr ""
+
+#: app/templates/scanner/index.html:48 app/templates/scanner/stock_out.html:15
+msgid "Remove items from inventory"
+msgstr ""
+
+#: app/templates/scanner/index.html:55
+msgid "Scanner Instructions"
+msgstr ""
+
+#: app/templates/scanner/index.html:57
+msgid "USB Barcode Scanner:"
+msgstr ""
+
+#: app/templates/scanner/index.html:57
+msgid ""
+"Simply scan the barcode when the input field is focused. The scanner acts"
+" as a keyboard and will automatically input the code."
+msgstr ""
+
+#: app/templates/scanner/index.html:58
+msgid "Manual Entry:"
+msgstr ""
+
+#: app/templates/scanner/index.html:58
+msgid "You can also manually type the SKU, barcode, or RFID tag number."
+msgstr ""
+
+#: app/templates/scanner/index.html:59
+msgid "Keyboard Shortcuts:"
+msgstr ""
+
+#: app/templates/scanner/index.html:59
+msgid "Press Tab to quickly move between fields for faster data entry."
+msgstr ""
+
+#: app/templates/scanner/lookup.html:3 app/templates/scanner/lookup.html:14
+msgid "Quick Lookup"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:12 app/templates/scanner/stock_in.html:12
+#: app/templates/scanner/stock_out.html:12
+msgid "Back to Scanner"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:15
+msgid "Scan barcode or enter product code"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:22 app/templates/scanner/stock_in.html:23
+#: app/templates/scanner/stock_out.html:23
+msgid "Barcode / RFID / SKU"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:30 app/templates/scanner/stock_in.html:31
+#: app/templates/scanner/stock_out.html:31
+msgid "Scan or enter code..."
+msgstr ""
+
+#: app/templates/scanner/lookup.html:32
+msgid "Focus this field and use your barcode scanner, or type manually"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:44
+msgid "Tips:"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:46
+msgid "Most USB barcode scanners work automatically"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:47
+msgid "The scanner will input the code and submit the form"
+msgstr ""
+
+#: app/templates/scanner/lookup.html:48
+msgid "You can also type the code manually"
+msgstr ""
+
+#: app/templates/scanner/stock_in.html:36
+#: app/templates/scanner/stock_out.html:36
+msgid "Quantity"
+msgstr ""
+
+#: app/templates/scanner/stock_in.html:49
+#: app/templates/scanner/stock_out.html:49
+msgid "Reference (Optional)"
+msgstr ""
+
+#: app/templates/scanner/stock_in.html:55
+#: app/templates/scanner/stock_out.html:55
+msgid "Reference (optional)"
+msgstr ""
+
+#: app/templates/scanner/stock_in.html:60
+#: app/templates/scanner/stock_out.html:60
+msgid "Notes (Optional)"
+msgstr ""
+
+#: app/templates/scanner/stock_in.html:66
+#: app/templates/scanner/stock_out.html:66
+msgid "Additional notes..."
+msgstr ""
+
+#: app/templates/scanner/stock_in.html:72
+msgid "Add Stock"
+msgstr ""
+
+#: app/templates/scanner/stock_out.html:72
+msgid "Remove Stock"
+msgstr ""
+

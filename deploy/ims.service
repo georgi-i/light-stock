@@ -1,0 +1,33 @@
+[Unit]
+Description=Inventory Management System (IMS)
+After=network.target
+
+[Service]
+Type=simple
+User=ims
+Group=www-data
+WorkingDirectory=/home/ims/app
+Environment="PATH=/home/ims/app/venv/bin:/usr/local/bin:/usr/bin:/bin"
+RuntimeDirectory=ims
+RuntimeDirectoryMode=0755
+ExecStart=/home/ims/app/venv/bin/gunicorn --config /home/ims/app/deploy/gunicorn.conf.py run:app
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+TimeoutStartSec=30
+PrivateTmp=true
+Restart=always
+RestartSec=10
+
+# Security hardening (balanced for functionality)
+NoNewPrivileges=true
+PrivateDevices=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/ims/app/instance /home/ims/logs /home/ims/backups
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

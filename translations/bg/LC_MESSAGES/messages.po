@@ -1,0 +1,1287 @@
+# Bulgarian translations for PROJECT.
+# Copyright (C) 2026 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2026-01-04 00:39+0200\n"
+"PO-Revision-Date: 2026-01-03 21:26+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: bg\n"
+"Language-Team: bg <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+# Application translations
+#: app/templates/base.html:78 app/templates/base.html:148
+#: app/templates/dashboard.html:8 app/templates/debug_locale.html:9
+msgid "Dashboard"
+msgstr "Табло"
+
+#: app/templates/base.html:82 app/templates/base.html:152
+#: app/templates/debug_locale.html:10 app/templates/inventory/products.html:8
+msgid "Products"
+msgstr "Продукти"
+
+#: app/templates/base.html:86 app/templates/base.html:156
+#: app/templates/scanner/index.html:3
+msgid "Scanner"
+msgstr "Скенер"
+
+#: app/templates/base.html:90 app/templates/base.html:160
+#: app/templates/inventory/categories.html:8
+msgid "Categories"
+msgstr "Категории"
+
+#: app/templates/auth/profile.html:8 app/templates/base.html:120
+msgid "Profile"
+msgstr "Профил"
+
+#: app/templates/base.html:123
+msgid "Users"
+msgstr "Потребители"
+
+#: app/templates/base.html:126
+msgid "Logout"
+msgstr "Изход"
+
+#: app/templates/dashboard.html:9
+msgid "Welcome back"
+msgstr "Добре дошли отново"
+
+#: app/templates/dashboard.html:18
+msgid "Total Products"
+msgstr "Общо продукти"
+
+#: app/templates/dashboard.html:28
+msgid "View all products"
+msgstr "Вижте всички продукти"
+
+#: app/templates/dashboard.html:39
+msgid "Low Stock Items"
+msgstr "Продукти с нисък запас"
+
+#: app/templates/dashboard.html:51
+msgid "View low stock"
+msgstr "Вижте ниските запаси"
+
+#: app/templates/dashboard.html:62
+msgid "Inventory Value"
+msgstr "Стойност на инвентара"
+
+#: app/templates/dashboard.html:78
+msgid "Quick Actions"
+msgstr "Бързи действия"
+
+#: app/templates/dashboard.html:82 app/templates/inventory/product_form.html:15
+msgid "Add New Product"
+msgstr "Добави нов продукт"
+
+#: app/templates/dashboard.html:86
+msgid "Scan Barcode"
+msgstr "Сканирай баркод"
+
+#: app/templates/dashboard.html:90 app/templates/scanner/index.html:34
+#: app/templates/scanner/stock_in.html:14
+msgid "Stock In"
+msgstr "Заприходяване"
+
+#: app/templates/dashboard.html:94 app/templates/scanner/index.html:47
+#: app/templates/scanner/stock_out.html:14
+msgid "Stock Out"
+msgstr "Отписване"
+
+#: app/templates/dashboard.html:101
+msgid "Low Stock Alerts"
+msgstr "Сигнали за нисък запас"
+
+#: app/templates/dashboard.html:120
+msgid "View all"
+msgstr "Виж всички"
+
+#: app/templates/dashboard.html:124
+msgid "No low stock items"
+msgstr "Няма продукти с нисък запас"
+
+#: app/templates/dashboard.html:131
+msgid "Recent Stock Movements"
+msgstr "Последни движения на запасите"
+
+#: app/templates/dashboard.html:172
+msgid "No recent movements"
+msgstr "Няма скорошни движения"
+
+#: app/templates/auth/login.html:13
+msgid "Inventory Management System"
+msgstr "Система за управление на инвентара"
+
+#: app/templates/auth/login.html:21
+#, fuzzy
+msgid "Username or Email"
+msgstr "Потребителско име или имейл"
+
+#: app/templates/auth/login.html:33
+msgid "Password"
+msgstr "Парола"
+
+#: app/templates/auth/login.html:49
+msgid "Remember me"
+msgstr "Запомни ме"
+
+#: app/templates/auth/login.html:56
+msgid "Sign in"
+msgstr "Вход"
+
+#: app/templates/auth/profile.html:14
+msgid "User Information"
+msgstr "Информация за потребителя"
+
+#: app/templates/auth/profile.html:17
+#, fuzzy
+msgid "Username"
+msgstr "Потребителско име"
+
+#: app/templates/auth/profile.html:21
+msgid "Email"
+msgstr "Имейл"
+
+#: app/templates/auth/profile.html:53
+msgid "Two-Factor Authentication"
+msgstr "Двуфакторна автентикация"
+
+#: app/templates/auth/users.html:8
+msgid "User Management"
+msgstr "Управление на потребители"
+
+#: app/templates/inventory/categories.html:11
+#: app/templates/inventory/category_form.html:56
+msgid "Add Category"
+msgstr "Добави категория"
+
+#: app/templates/inventory/categories.html:25
+msgid "products"
+msgstr "продукта"
+
+#: app/templates/inventory/categories.html:28
+msgid "View Products"
+msgstr "Вижте продуктите"
+
+#: app/templates/inventory/categories.html:37
+msgid "No categories yet"
+msgstr "Все още няма категории"
+
+#: app/templates/inventory/categories.html:40
+msgid "Add Your First Category"
+msgstr "Добавете вашата първа категория"
+
+#: app/templates/inventory/category_form.html:13
+msgid "Back to Categories"
+msgstr "Назад към категориите"
+
+#: app/templates/inventory/category_form.html:15
+msgid "Add New Category"
+msgstr "Добави нова категория"
+
+#: app/templates/inventory/category_form.html:22
+msgid "Category Name (English)"
+msgstr "Име на категорията (Английски)"
+
+#: app/templates/inventory/category_form.html:34
+msgid "Category Name (Bulgarian)"
+msgstr "Име на категорията (Български)"
+
+#: app/templates/inventory/category_form.html:45
+msgid "Description (Optional)"
+msgstr "Описание (Опционално)"
+
+#: app/templates/inventory/category_form.html:60
+#: app/templates/inventory/product_form.html:151
+msgid "Cancel"
+msgstr "Отказ"
+
+#: app/templates/inventory/product_form.html:13
+msgid "Back"
+msgstr "Назад"
+
+#: app/templates/inventory/product_form.html:15
+msgid "Edit Product"
+msgstr "Редактирай продукт"
+
+#: app/templates/inventory/product_form.html:23
+msgid "Product Name"
+msgstr "Име на продукт"
+
+#: app/templates/inventory/product_form.html:49
+msgid "Barcode"
+msgstr "Баркод"
+
+#: app/templates/inventory/product_form.html:62
+msgid "Description"
+msgstr "Описание"
+
+#: app/templates/inventory/product_form.html:75
+msgid "Initial Quantity"
+msgstr "Начално количество"
+
+#: app/templates/inventory/product_form.html:88
+msgid "Minimum Stock Level"
+msgstr "Минимално ниво на запас"
+
+#: app/templates/inventory/product_form.html:100
+msgid "Unit Price (EUR)"
+msgstr "Единична цена (EUR)"
+
+#: app/templates/inventory/product_form.html:116
+#: app/templates/inventory/products.html:68
+msgid "Category"
+msgstr "Категория"
+
+#: app/templates/inventory/product_form.html:121
+msgid "No Category"
+msgstr "Без категория"
+
+#: app/templates/inventory/product_form.html:132
+#: app/templates/inventory/products.html:71
+msgid "Location"
+msgstr "Местоположение"
+
+#: app/templates/inventory/product_form.html:138
+msgid "e.g., Warehouse A, Shelf 3"
+msgstr "напр. Склад А, Рафт 3"
+
+#: app/templates/inventory/product_form.html:147
+msgid "Update Product"
+msgstr "Актуализирай продукт"
+
+#: app/templates/inventory/product_form.html:147
+#: app/templates/inventory/products.html:11
+msgid "Add Product"
+msgstr "Добави продукт"
+
+#: app/templates/inventory/products.html:22
+msgid "Search by name, SKU, or barcode..."
+msgstr "Търсене по име, SKU или баркод..."
+
+#: app/templates/inventory/products.html:28
+msgid "All Categories"
+msgstr "Всички категории"
+
+#: app/templates/inventory/products.html:39
+msgid "Search"
+msgstr "Търсене"
+
+#: app/templates/inventory/products.html:43
+msgid "Clear"
+msgstr "Изчисти"
+
+#: app/templates/inventory/products.html:54
+msgid "Show only low stock items"
+msgstr "Покажи само продукти с нисък запас"
+
+#: app/templates/inventory/products.html:66
+msgid "Product"
+msgstr "Продукт"
+
+#: app/templates/inventory/products.html:67
+msgid "SKU"
+msgstr "SKU"
+
+#: app/templates/inventory/products.html:69
+msgid "Stock"
+msgstr "Запас"
+
+#: app/templates/inventory/products.html:70
+msgid "Price"
+msgstr "Цена"
+
+#: app/templates/inventory/products.html:72
+msgid "Actions"
+msgstr "Действия"
+
+#: app/templates/inventory/products.html:85
+msgid "Low Stock"
+msgstr "Нисък запас"
+
+#: app/templates/inventory/products.html:109
+msgid "View"
+msgstr "Виж"
+
+#: app/templates/inventory/products.html:123
+msgid "Showing"
+msgstr "Показване на"
+
+#: app/templates/inventory/products.html:123
+msgid "to"
+msgstr "до"
+
+#: app/templates/inventory/products.html:123
+msgid "of"
+msgstr "от"
+
+#: app/templates/inventory/products.html:123
+msgid "results"
+msgstr "резултата"
+
+#: app/templates/inventory/products.html:129
+msgid "Previous"
+msgstr "Предишна"
+
+#: app/templates/inventory/products.html:135
+msgid "Next"
+msgstr "Следваща"
+
+#: app/templates/inventory/products.html:144
+msgid "No products found"
+msgstr "Няма намерени продукти"
+
+#: app/templates/inventory/products.html:147
+msgid "Add Your First Product"
+msgstr "Добавете вашия първи продукт"
+
+#: app/templates/scanner/index.html:8
+msgid "Barcode Scanner"
+msgstr "Баркод скенер"
+
+#: app/templates/scanner/index.html:9
+msgid "Quick scanning operations for inventory management"
+msgstr "Бързи операции за сканиране за управление на инвентара"
+
+#: app/templates/scanner/index.html:21 app/templates/scanner/lookup.html:38
+msgid "Lookup Product"
+msgstr "Търсене на продукт"
+
+#: app/templates/scanner/index.html:22
+msgid "Scan to view product details"
+msgstr "Сканирайте, за да видите детайли за продукта"
+
+#: app/templates/scanner/index.html:35 app/templates/scanner/stock_in.html:15
+msgid "Add items to inventory"
+msgstr "Добавете артикули към инвентара"
+
+#: app/templates/scanner/index.html:48 app/templates/scanner/stock_out.html:15
+msgid "Remove items from inventory"
+msgstr "Премахнете артикули от инвентара"
+
+#: app/templates/scanner/index.html:55
+msgid "Scanner Instructions"
+msgstr "Инструкции за скенера"
+
+#: app/templates/scanner/index.html:57
+msgid "USB Barcode Scanner:"
+msgstr "USB Баркод скенер:"
+
+#: app/templates/scanner/index.html:57
+msgid ""
+"Simply scan the barcode when the input field is focused. The scanner acts"
+" as a keyboard and will automatically input the code."
+msgstr ""
+"Просто сканирайте баркода, когато полето за въвеждане е фокусирано. "
+"Скенерът действа като клавиатура и автоматично ще въведе кода."
+
+#: app/templates/scanner/index.html:58
+msgid "Manual Entry:"
+msgstr "Ръчно въвеждане:"
+
+#: app/templates/scanner/index.html:58
+msgid "You can also manually type the SKU, barcode, or RFID tag number."
+msgstr "Можете също да въведете ръчно SKU, баркод или RFID номер на етикета."
+
+#: app/templates/scanner/index.html:59
+msgid "Keyboard Shortcuts:"
+msgstr "Клавишни комбинации:"
+
+#: app/templates/scanner/index.html:59
+msgid "Press Tab to quickly move between fields for faster data entry."
+msgstr ""
+"Натиснете Tab за бързо преминаване между полетата за по-бързо въвеждане "
+"на данни."
+
+#: app/templates/scanner/lookup.html:3 app/templates/scanner/lookup.html:14
+msgid "Quick Lookup"
+msgstr "Бързо търсене"
+
+#: app/templates/scanner/lookup.html:12 app/templates/scanner/stock_in.html:12
+#: app/templates/scanner/stock_out.html:12
+msgid "Back to Scanner"
+msgstr "Назад към скенера"
+
+#: app/templates/scanner/lookup.html:15
+msgid "Scan barcode or enter product code"
+msgstr "Сканирайте баркод или въведете код на продукт"
+
+#: app/templates/scanner/lookup.html:22 app/templates/scanner/stock_in.html:23
+#: app/templates/scanner/stock_out.html:23
+msgid "Barcode / RFID / SKU"
+msgstr "Баркод / RFID / SKU"
+
+#: app/templates/scanner/lookup.html:30 app/templates/scanner/stock_in.html:31
+#: app/templates/scanner/stock_out.html:31
+msgid "Scan or enter code..."
+msgstr "Сканирайте или въведете код..."
+
+#: app/templates/scanner/lookup.html:32
+msgid "Focus this field and use your barcode scanner, or type manually"
+msgstr "Фокусирайте това поле и използвайте вашия баркод скенер или въведете ръчно"
+
+#: app/templates/scanner/lookup.html:44
+msgid "Tips:"
+msgstr "Съвети:"
+
+#: app/templates/scanner/lookup.html:46
+msgid "Most USB barcode scanners work automatically"
+msgstr "Повечето USB баркод скенери работят автоматично"
+
+#: app/templates/scanner/lookup.html:47
+msgid "The scanner will input the code and submit the form"
+msgstr "Скенерът ще въведе кода и ще изпрати формата"
+
+#: app/templates/scanner/lookup.html:48
+msgid "You can also type the code manually"
+msgstr "Можете също да въведете кода ръчно"
+
+#: app/templates/scanner/stock_in.html:36
+#: app/templates/scanner/stock_out.html:36
+msgid "Quantity"
+msgstr "Количество"
+
+#: app/templates/scanner/stock_in.html:49
+#: app/templates/scanner/stock_out.html:49
+msgid "Reference (Optional)"
+msgstr "Референция (Опционално)"
+
+#: app/templates/scanner/stock_in.html:55
+#: app/templates/scanner/stock_out.html:55
+msgid "Reference (optional)"
+msgstr "Референция (опционално)"
+
+#: app/templates/scanner/stock_in.html:60
+#: app/templates/scanner/stock_out.html:60
+msgid "Notes (Optional)"
+msgstr "Бележки (Опционално)"
+
+#: app/templates/scanner/stock_in.html:66
+#: app/templates/scanner/stock_out.html:66
+msgid "Additional notes..."
+msgstr "Допълнителни бележки..."
+
+#: app/templates/scanner/stock_in.html:72
+msgid "Add Stock"
+msgstr "Добави запас"
+
+#: app/templates/scanner/stock_out.html:72
+msgid "Remove Stock"
+msgstr "Премахни запас"
+
+#~ msgid "{editor}: Editing failed"
+#~ msgstr ""
+
+#~ msgid "{editor}: Editing failed: {e}"
+#~ msgstr ""
+
+#~ msgid "{text} {deprecated_message}"
+#~ msgstr ""
+
+#~ msgid "Options"
+#~ msgstr ""
+
+#~ msgid "Got unexpected extra argument ({args})"
+#~ msgid_plural "Got unexpected extra arguments ({args})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "DeprecationWarning: The command {name!r} is deprecated.{extra_message}"
+#~ msgstr ""
+
+#~ msgid "Aborted!"
+#~ msgstr ""
+
+#~ msgid "Commands"
+#~ msgstr ""
+
+#~ msgid "Missing command."
+#~ msgstr ""
+
+#~ msgid "No such command {name!r}."
+#~ msgstr ""
+
+#~ msgid "Value must be an iterable."
+#~ msgstr ""
+
+#~ msgid "Takes {nargs} values but 1 was given."
+#~ msgid_plural "Takes {nargs} values but {len} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid ""
+#~ "DeprecationWarning: The {param_type} {name!r} "
+#~ "is deprecated.{extra_message}"
+#~ msgstr ""
+
+#~ msgid "env var: {var}"
+#~ msgstr ""
+
+#~ msgid "default: {default}"
+#~ msgstr ""
+
+#~ msgid "required"
+#~ msgstr ""
+
+#~ msgid "(dynamic)"
+#~ msgstr ""
+
+#~ msgid "%(prog)s, version %(version)s"
+#~ msgstr ""
+
+#~ msgid "Show the version and exit."
+#~ msgstr ""
+
+#~ msgid "Show this message and exit."
+#~ msgstr ""
+
+#~ msgid "Error: {message}"
+#~ msgstr ""
+
+#~ msgid "Try '{command} {option}' for help."
+#~ msgstr ""
+
+#~ msgid "Invalid value: {message}"
+#~ msgstr ""
+
+#~ msgid "Invalid value for {param_hint}: {message}"
+#~ msgstr ""
+
+#~ msgid "Missing argument"
+#~ msgstr ""
+
+#~ msgid "Missing option"
+#~ msgstr ""
+
+#~ msgid "Missing parameter"
+#~ msgstr ""
+
+#~ msgid "Missing {param_type}"
+#~ msgstr ""
+
+#~ msgid "Missing parameter: {param_name}"
+#~ msgstr ""
+
+#~ msgid "No such option: {name}"
+#~ msgstr ""
+
+#~ msgid "Did you mean {possibility}?"
+#~ msgid_plural "(Possible options: {possibilities})"
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "unknown error"
+#~ msgstr ""
+
+#~ msgid "Could not open file {filename!r}: {message}"
+#~ msgstr ""
+
+#~ msgid "Usage:"
+#~ msgstr ""
+
+#~ msgid "Argument {name!r} takes {nargs} values."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} does not take a value."
+#~ msgstr ""
+
+#~ msgid "Option {name!r} requires an argument."
+#~ msgid_plural "Option {name!r} requires {nargs} arguments."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Shell completion is not supported for Bash versions older than 4.4."
+#~ msgstr ""
+
+#~ msgid "Couldn't detect Bash version, shell completion is not supported."
+#~ msgstr ""
+
+#~ msgid "Repeat for confirmation"
+#~ msgstr ""
+
+#~ msgid "Error: The value you entered was invalid."
+#~ msgstr ""
+
+#~ msgid "Error: {e.message}"
+#~ msgstr ""
+
+#~ msgid "Error: The two entered values do not match."
+#~ msgstr ""
+
+#~ msgid "Error: invalid input"
+#~ msgstr ""
+
+#~ msgid "Press any key to continue..."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Choose from:\n"
+#~ "\t{choices}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not {choice}."
+#~ msgid_plural "{value!r} is not one of {choices}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} does not match the format {format}."
+#~ msgid_plural "{value!r} does not match the formats {formats}."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "{value!r} is not a valid {number_type}."
+#~ msgstr ""
+
+#~ msgid "{value} is not in the range {range}."
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid boolean. Recognized values: {states}"
+#~ msgstr ""
+
+#~ msgid "{value!r} is not a valid UUID."
+#~ msgstr ""
+
+#~ msgid "file"
+#~ msgstr ""
+
+#~ msgid "directory"
+#~ msgstr ""
+
+#~ msgid "path"
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} does not exist."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a file."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is a directory."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not readable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not writable."
+#~ msgstr ""
+
+#~ msgid "{name} {filename!r} is not executable."
+#~ msgstr ""
+
+#~ msgid "{len_type} values are required, but {len_value} was given."
+#~ msgid_plural "{len_type} values are required, but {len_value} were given."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Login Required"
+#~ msgstr ""
+
+#~ msgid "Welcome"
+#~ msgstr ""
+
+#~ msgid "Please confirm your email"
+#~ msgstr ""
+
+#~ msgid "Login instructions"
+#~ msgstr ""
+
+#~ msgid "Your password has been reset"
+#~ msgstr ""
+
+#~ msgid "Your password has been changed"
+#~ msgstr ""
+
+#~ msgid "Password reset instructions"
+#~ msgstr ""
+
+#~ msgid "Two-factor Login"
+#~ msgstr ""
+
+#~ msgid "Two-factor Rescue"
+#~ msgstr ""
+
+#~ msgid "Verification Code"
+#~ msgstr ""
+
+#~ msgid "Input not appropriate for requested API"
+#~ msgstr ""
+
+#~ msgid "Authentication failed - identity or password/passcode invalid"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If that email address is in our"
+#~ " system, you will receive an email"
+#~ " describing how to reset your "
+#~ "password."
+#~ msgstr ""
+
+#~ msgid "If that identity is in our system, you were sent a code."
+#~ msgstr ""
+
+#~ msgid "You do not have permission to view this resource."
+#~ msgstr ""
+
+#~ msgid "You must sign in to view this resource."
+#~ msgstr ""
+
+#~ msgid "You must re-authenticate to access this endpoint"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Thank you. To confirm your email "
+#~ "address %(email)s, please click on the"
+#~ " link in the email we have just"
+#~ " sent to you."
+#~ msgstr ""
+
+#~ msgid "Thank you. Your email has been confirmed."
+#~ msgstr ""
+
+#~ msgid "Your email has already been confirmed."
+#~ msgstr ""
+
+#~ msgid "Invalid confirmation token."
+#~ msgstr ""
+
+#~ msgid "%(email)s is already associated with an account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Identity attribute '%(attr)s' with value "
+#~ "'%(value)s' is already associated with "
+#~ "an account."
+#~ msgstr ""
+
+#~ msgid "Identity %(id)s not registered"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An error occurred while communicating "
+#~ "with the Oauth provider: (%(exerror)s -"
+#~ " %(exdesc)s). Please try again."
+#~ msgstr ""
+
+#~ msgid "Password does not match"
+#~ msgstr ""
+
+#~ msgid "Passwords do not match"
+#~ msgstr ""
+
+#~ msgid "Redirections outside the domain are forbidden"
+#~ msgstr ""
+
+#~ msgid "Recovery code invalid"
+#~ msgstr ""
+
+#~ msgid "No recovery codes generated yet"
+#~ msgstr ""
+
+#~ msgid "Instructions to reset your password have been sent to %(email)s."
+#~ msgstr ""
+
+#~ msgid "You did not reset your password within %(within)s. "
+#~ msgstr ""
+
+#~ msgid "Invalid reset password token."
+#~ msgstr ""
+
+#~ msgid "Email requires confirmation."
+#~ msgstr ""
+
+#~ msgid "Confirmation instructions have been sent to %(email)s."
+#~ msgstr ""
+
+#~ msgid "You did not confirm your email within %(within)s. "
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You did not login within %(within)s. "
+#~ "New instructions to login have been "
+#~ "sent to %(email)s."
+#~ msgstr ""
+
+#~ msgid "Instructions to login have been sent to %(email)s."
+#~ msgstr ""
+
+#~ msgid "Invalid login token."
+#~ msgstr ""
+
+#~ msgid "Account is disabled."
+#~ msgstr ""
+
+#~ msgid "Email not provided"
+#~ msgstr ""
+
+#~ msgid "Invalid email address"
+#~ msgstr ""
+
+#~ msgid "Invalid code"
+#~ msgstr ""
+
+#~ msgid "Password not provided"
+#~ msgstr ""
+
+#~ msgid "Password must be at least %(length)s characters"
+#~ msgstr ""
+
+#~ msgid "Password not complex enough"
+#~ msgstr ""
+
+#~ msgid "Password on breached list"
+#~ msgstr ""
+
+#~ msgid "Failed to contact breached passwords site"
+#~ msgstr ""
+
+#~ msgid "Phone number not valid e.g. missing country code"
+#~ msgstr ""
+
+#~ msgid "Specified user does not exist"
+#~ msgstr ""
+
+#~ msgid "Invalid password"
+#~ msgstr ""
+
+#~ msgid "Password or code submitted is not valid"
+#~ msgstr ""
+
+#~ msgid "You have successfully logged in."
+#~ msgstr ""
+
+#~ msgid "Forgot password?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You successfully reset your password and"
+#~ " you have been logged in "
+#~ "automatically."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You successfully reset your password. "
+#~ "Please authenticate using your new "
+#~ "password."
+#~ msgstr ""
+
+#~ msgid "Your new password must be different than your previous password."
+#~ msgstr ""
+
+#~ msgid "You successfully changed your password."
+#~ msgstr ""
+
+#~ msgid "Please log in to access this page."
+#~ msgstr ""
+
+#~ msgid "Please reauthenticate to access this page."
+#~ msgstr ""
+
+#~ msgid "Reauthentication successful"
+#~ msgstr ""
+
+#~ msgid "You can only access this endpoint when not logged in."
+#~ msgstr ""
+
+#~ msgid "Code has been sent."
+#~ msgstr ""
+
+#~ msgid "Failed to send code. Please try again later"
+#~ msgstr ""
+
+#~ msgid "Your code has been confirmed"
+#~ msgstr ""
+
+#~ msgid "You successfully changed your two-factor method."
+#~ msgstr ""
+
+#~ msgid "You currently do not have permissions to access this page"
+#~ msgstr ""
+
+#~ msgid "Marked method is not valid"
+#~ msgstr ""
+
+#~ msgid "You successfully disabled two factor authorization."
+#~ msgstr ""
+
+#~ msgid "Currently active sign in options: %(method_list)s."
+#~ msgstr ""
+
+#~ msgid "Requested method is not valid"
+#~ msgstr ""
+
+#~ msgid "Setup must be completed within %(within)s. Please start over."
+#~ msgstr ""
+
+#~ msgid "Unified sign in setup successful"
+#~ msgstr ""
+
+#~ msgid "You must specify a valid identity to sign in"
+#~ msgstr ""
+
+#~ msgid "Use this code to sign in: %(code)s."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Username must be at least %(min)d "
+#~ "characters and less than %(max)d "
+#~ "characters"
+#~ msgstr ""
+
+#~ msgid "Username contains illegal characters"
+#~ msgstr ""
+
+#~ msgid "Username can contain only letters and numbers"
+#~ msgstr ""
+
+#~ msgid "Username not provided"
+#~ msgstr ""
+
+#~ msgid "%(username)s is already associated with an account."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "WebAuthn operation must be completed "
+#~ "within %(within)s. Please start over."
+#~ msgstr ""
+
+#~ msgid "Nickname for new credential is required."
+#~ msgstr ""
+
+#~ msgid "%(name)s is already associated with a credential."
+#~ msgstr ""
+
+#~ msgid "%(name)s not registered with current user."
+#~ msgstr ""
+
+#~ msgid "Successfully deleted WebAuthn credential with name: %(name)s"
+#~ msgstr ""
+
+#~ msgid "Successfully added WebAuthn credential with name: %(name)s"
+#~ msgstr ""
+
+#~ msgid "WebAuthn credential id already registered."
+#~ msgstr ""
+
+#~ msgid "Unregistered WebAuthn credential id."
+#~ msgstr ""
+
+#~ msgid "WebAuthn credential doesn't belong to any user."
+#~ msgstr ""
+
+#~ msgid "Could not verify WebAuthn credential: %(cause)s."
+#~ msgstr ""
+
+#~ msgid "Credential not registered for this use (first or secondary)"
+#~ msgstr ""
+
+#~ msgid "Credential user handle didn't match"
+#~ msgstr ""
+
+#~ msgid "Email Address"
+#~ msgstr ""
+
+#~ msgid "Password"
+#~ msgstr ""
+
+#~ msgid "Remember Me"
+#~ msgstr ""
+
+#~ msgid "Login"
+#~ msgstr ""
+
+#~ msgid "Sign In"
+#~ msgstr ""
+
+#~ msgid "Register"
+#~ msgstr ""
+
+#~ msgid "Resend Confirmation Instructions"
+#~ msgstr ""
+
+#~ msgid "Recover Password"
+#~ msgstr ""
+
+#~ msgid "Reset Password"
+#~ msgstr ""
+
+#~ msgid "Retype Password"
+#~ msgstr ""
+
+#~ msgid "New Password"
+#~ msgstr ""
+
+#~ msgid "Change Password"
+#~ msgstr ""
+
+#~ msgid "Send Login Link"
+#~ msgstr ""
+
+#~ msgid "Verify Password"
+#~ msgstr ""
+
+#~ msgid "Change Method"
+#~ msgstr ""
+
+#~ msgid "Phone Number"
+#~ msgstr ""
+
+#~ msgid "Authentication Code"
+#~ msgstr ""
+
+#~ msgid "Submit"
+#~ msgstr ""
+
+#~ msgid "Submit Code"
+#~ msgstr ""
+
+#~ msgid "Error(s)"
+#~ msgstr ""
+
+#~ msgid "Identity"
+#~ msgstr ""
+
+#~ msgid "Send Code"
+#~ msgstr ""
+
+#~ msgid "Passcode"
+#~ msgstr ""
+
+#~ msgid "Username"
+#~ msgstr ""
+
+#~ msgid "Delete"
+#~ msgstr ""
+
+#~ msgid "Set up using email"
+#~ msgstr ""
+
+#~ msgid "Set up using an authenticator app (e.g. google, lastpass, authy)"
+#~ msgstr ""
+
+#~ msgid "Set up using SMS"
+#~ msgstr ""
+
+#~ msgid "Google Authenticator"
+#~ msgstr ""
+
+#~ msgid "authenticator"
+#~ msgstr ""
+
+#~ msgid "email"
+#~ msgstr ""
+
+#~ msgid "SMS"
+#~ msgstr ""
+
+#~ msgid "password"
+#~ msgstr ""
+
+#~ msgid "none"
+#~ msgstr ""
+
+#~ msgid "Available Methods"
+#~ msgstr ""
+
+#~ msgid "Disable two factor authentication"
+#~ msgstr ""
+
+#~ msgid "Trouble Accessing Your Account?/Lost Mobile Device?"
+#~ msgstr ""
+
+#~ msgid "Contact Administrator"
+#~ msgstr ""
+
+#~ msgid "Show Recovery Codes"
+#~ msgstr ""
+
+#~ msgid "Generate New Recovery Codes"
+#~ msgstr ""
+
+#~ msgid "Recovery Code"
+#~ msgstr ""
+
+#~ msgid "Available Second Factor Methods:"
+#~ msgstr ""
+
+#~ msgid "Select"
+#~ msgstr ""
+
+#~ msgid "Send code via email"
+#~ msgstr ""
+
+#~ msgid "Use previously downloaded recovery code"
+#~ msgstr ""
+
+#~ msgid "Code or Password"
+#~ msgstr ""
+
+#~ msgid "Via email"
+#~ msgstr ""
+
+#~ msgid "Via SMS"
+#~ msgstr ""
+
+#~ msgid "Setup additional sign in option"
+#~ msgstr ""
+
+#~ msgid "Delete active sign in option"
+#~ msgstr ""
+
+#~ msgid "Nickname"
+#~ msgstr ""
+
+#~ msgid "Usage"
+#~ msgstr ""
+
+#~ msgid "Use as a first authentication factor"
+#~ msgstr ""
+
+#~ msgid "Use as a secondary authentication factor"
+#~ msgstr ""
+
+#~ msgid "Start"
+#~ msgstr ""
+
+#~ msgid "webauthn"
+#~ msgstr ""
+
+#~ msgid "This field is required."
+#~ msgstr ""
+
+#~ msgid "File does not have an approved extension: {extensions}"
+#~ msgstr ""
+
+#~ msgid "File does not have an approved extension."
+#~ msgstr ""
+
+#~ msgid "File must be between {min_size} and {max_size} bytes."
+#~ msgstr ""
+
+#~ msgid "algorithm"
+#~ msgstr ""
+
+#~ msgid "Invalid field name '%s'."
+#~ msgstr ""
+
+#~ msgid "Field must be equal to %(other_name)s."
+#~ msgstr ""
+
+#~ msgid "Field must be at least %(min)d character long."
+#~ msgid_plural "Field must be at least %(min)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field cannot be longer than %(max)d character."
+#~ msgid_plural "Field cannot be longer than %(max)d characters."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field must be exactly %(max)d character long."
+#~ msgid_plural "Field must be exactly %(max)d characters long."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Field must be between %(min)d and %(max)d characters long."
+#~ msgstr ""
+
+#~ msgid "Number must be at least %(min)s."
+#~ msgstr ""
+
+#~ msgid "Number must be at most %(max)s."
+#~ msgstr ""
+
+#~ msgid "Number must be between %(min)s and %(max)s."
+#~ msgstr ""
+
+#~ msgid "Invalid input."
+#~ msgstr ""
+
+#~ msgid "Invalid email address."
+#~ msgstr ""
+
+#~ msgid "Invalid IP address."
+#~ msgstr ""
+
+#~ msgid "Invalid Mac address."
+#~ msgstr ""
+
+#~ msgid "Invalid URL."
+#~ msgstr ""
+
+#~ msgid "Invalid UUID."
+#~ msgstr ""
+
+#~ msgid "Invalid value, must be one of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "Invalid value, can't be any of: %(values)s."
+#~ msgstr ""
+
+#~ msgid "This field cannot be edited."
+#~ msgstr ""
+
+#~ msgid "This field is disabled and cannot have a value."
+#~ msgstr ""
+
+#~ msgid "Invalid CSRF Token."
+#~ msgstr ""
+
+#~ msgid "CSRF token missing."
+#~ msgstr ""
+
+#~ msgid "CSRF failed."
+#~ msgstr ""
+
+#~ msgid "CSRF token expired."
+#~ msgstr ""
+
+#~ msgid "Invalid Choice: could not coerce."
+#~ msgstr ""
+
+#~ msgid "Choices cannot be None."
+#~ msgstr ""
+
+#~ msgid "Not a valid choice."
+#~ msgstr ""
+
+#~ msgid "Invalid choice(s): one or more data inputs could not be coerced."
+#~ msgstr ""
+
+#~ msgid "'%(value)s' is not a valid choice for this field."
+#~ msgid_plural "'%(value)s' are not valid choices for this field."
+#~ msgstr[0] ""
+#~ msgstr[1] ""
+
+#~ msgid "Not a valid datetime value."
+#~ msgstr ""
+
+#~ msgid "Not a valid date value."
+#~ msgstr ""
+
+#~ msgid "Not a valid time value."
+#~ msgstr ""
+
+#~ msgid "Not a valid week value."
+#~ msgstr ""
+
+#~ msgid "Not a valid integer value."
+#~ msgstr ""
+
+#~ msgid "Not a valid decimal value."
+#~ msgstr ""
+
+#~ msgid "Not a valid float value."
+#~ msgstr ""
+
+#~ msgid "Don't have an account?"
+#~ msgstr "Нямате акаунт?"
+

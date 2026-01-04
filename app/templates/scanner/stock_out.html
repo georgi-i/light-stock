@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block title %}Stock Out - IMS{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto">
+    <div class="mb-8">
+        <a href="{{ url_for('scanner.index') }}" class="text-blue-600 hover:text-blue-700 inline-flex items-center mb-4">
+            <svg class="h-5 w-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+            {{ _('Back to Scanner') }}
+        </a>
+        <h1 class="text-3xl font-bold text-gray-900">{{ _('Stock Out') }}</h1>
+        <p class="mt-2 text-gray-600">{{ _('Remove items from inventory') }}</p>
+    </div>
+
+    <div class="apple-card p-8">
+        <form method="POST" action="{{ url_for('scanner.stock_out') }}" id="stockOutForm">
+            <div class="space-y-4">
+                <div>
+                    <label for="code" class="block text-sm font-medium text-gray-700 mb-2">
+                        {{ _('Barcode / RFID / SKU') }}
+                    </label>
+                    <input type="text"
+                           name="code"
+                           id="code"
+                           required
+                           autofocus
+                           class="scanner-input w-full"
+                           placeholder="{{ _('Scan or enter code...') }}">
+                </div>
+
+                <div>
+                    <label for="quantity" class="block text-sm font-medium text-gray-700 mb-2">
+                        {{ _('Quantity') }}
+                    </label>
+                    <input type="number"
+                           name="quantity"
+                           id="quantity"
+                           min="1"
+                           value="1"
+                           required
+                           class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                </div>
+
+                <div>
+                    <label for="reference" class="block text-sm font-medium text-gray-700 mb-2">
+                        {{ _('Reference (Optional)') }}
+                    </label>
+                    <input type="text"
+                           name="reference"
+                           id="reference"
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                           placeholder="{{ _('Reference (optional)') }}">
+                </div>
+
+                <div>
+                    <label for="notes" class="block text-sm font-medium text-gray-700 mb-2">
+                        {{ _('Notes (Optional)') }}
+                    </label>
+                    <textarea name="notes"
+                              id="notes"
+                              rows="2"
+                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                              placeholder="{{ _('Additional notes...') }}"></textarea>
+                </div>
+            </div>
+
+            <button type="submit"
+                    class="mt-6 w-full py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 apple-btn">
+                {{ _('Remove Stock') }}
+            </button>
+        </form>
+    </div>
+</div>
+
+<script>
+    // Clear form after successful submission
+    {% if success %}
+    document.getElementById('stockOutForm').reset();
+    document.getElementById('code').focus();
+    {% endif %}
+</script>
+{% endblock %}
