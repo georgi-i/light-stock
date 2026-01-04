@@ -54,6 +54,14 @@ A lightweight, secure web-based Inventory Management System with barcode/RFID sc
 - **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** - Common issues and solutions
 - **[CLAUDE.md](CLAUDE.md)** - Project specification and development guidelines
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+**Georgi Isaev** - [georgi-i](https://github.com/georgi-i)
+
 ## Installation
 
 ### Prerequisites
